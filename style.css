@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+    /* border: 1px solid red; */
+}
+.container{
+    height: auto;
+    width: 100%;
+}
+.nav{
+    height: 200px;
+    width: 100%;
+    /* margin-left: 5%; */
+
+}
+.nav .part1{
+    height: 50%;
+    width: 100%;
+    border-bottom: 1px solid gray;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.part1 img{
+    width: 350px;
+    margin-left: 4%;
+    
+}
+.part1 .i{
+    display: none;
+}
+.nav .part2{
+    height: 50%;
+    width: 100%;
+}
+.part2 .list-part{
+    height: 50%;
+    width: 100%;
+    display: flex;
+}
+.list-part ul{
+    height: auto;
+    width: 90%;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.list-part .icons{
+    height: auto;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.5em;
+}
+.btn-part{
+    height: 50%;
+    width: 40%;
+    margin-left: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-part button{
+    height: 100%;
+    width: 200px;
+    background-color: white;
+    border: 1px solid gray;
+    color: gray;
+    font-size: 1em;
+}
+
+.homepage{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-block: 100px;
+}
+.homepage h1{
+    font-size: 3em;
+   margin-bottom: 20px;
+   text-align: center;
+}
+.grey-page{
+    height: 80%;
+    width:85%;
+    padding: 30px;
+    background-color: rgb(220, 217, 217);
+    display: flex;
+    flex-direction: column;
+}
+.grey-page #pink{
+    width: 100%;
+}
+.grey-page .line-1{
+    display: flex;
+    margin-top: 100px;
+}
+.line-1 .box{
+    height: auto;
+    padding: 20px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+.box button{
+    height: 40px;
+    width: 70px;
+    background-color: black;
+    color: white;
+    border: none;
+    margin-bottom: 20px;
+}
+.box p{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    text-decoration: underline;
+}
+.box h4{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.box s{
+    color: rgb(112, 111, 111);
+}
+.box #pista{
+    height: 210px;
+}
+#almonds h4{
+    margin-top: 60px;
+}
+#pumpkin h4{
+    margin-top: 25px;
+}
+#pist h4{
+    margin-top: 25px;
+}
+.container .last-part{
+    height: auto;
+    width: 100%;
+    background-color: rgb(220, 217, 217);
+    padding: 30px;
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    
+}
+.text-part{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1em;
+}
+.text-part .h-part{
+    height: auto;
+    width: 30%;
+}
+.text-part ul{
+    height: auto;
+    width: 30%;
+}
+.last-part .img-part{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.img-1{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.img-1 #first{
+    height: 50px;
+    width: 100px;
+}
+.img-1 #second{
+    width: 30%;
+}
+.img-1 #third{
+    height:70px;
+    width: 200px;
+}
+.img-1 #four{
+    width: 30%;
+}
+#img-2{
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(69, 68, 68);
+}
+
+.last-part #lp{
+    margin-top: 20px;
+    margin-bottom: 70px;
+    text-align: end;
+}
+.fixed-part{
+    height: 70px;
+    width: 100%;
+    background-color: #3d9cd2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 20px;
+    position: fixed;
+    bottom: 0px;
+}
+.fixed-part i{
+    font-size: 3em;
+    background-color: white;
+    position: relative;
+    top: -35px;
+}
+.line-1 .box img:hover{
+width: 180px;
+}
+.box button:hover{
+    background-color: rgb(49, 48, 48);
+}
+/* responsive css code */
+
+@media (max-width:1000px) {
+    .nav{
+        height: 140px;
+    }
+    .nav .part2{
+        display: none;
+    }
+    .nav .part1{
+        height: 80%;
+        width: 100%;
+    }
+    .nav .part2{
+        height: 0%;
+    }
+    .homepage{
+        padding-block: 10px;
+    }
+    .part1 .i{
+        display: inline;
+        height: 80px;
+    width: 150px;
+    font-size: 1.2em;
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    }
+    .grey-page{
+        padding: 5%;
+    }
+    .grey-page .line-1{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+    .line-1 .box{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+   
+}
+@media (max-width:768px) {
+    .text-part{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 0.8em;
+        justify-content: space-between;
+    }
+    .text-part br{
+        display: none;
+    }
+    .text-part ul{
+        margin-block: 30px;
+    }
+    .img-part{
+        margin-top: 20px;
+    }
+    .text-part .h-part{
+        width: 100%;
+    }
+    .text-part ul{
+        width: 100%;
+    }
+    .last-part #lp{
+        font-size: 0.9em;
+    }
+    .fixed-part p{
+        font-size: 0.9em;
+    }
+}
+@media (max-width:480px) {
+    
+    .homepage{
+        padding-block: 0px;
+    }
+    .homepage h1{
+        font-size: 2em;
+    }
+    .part1 img{
+        width: 200px;
+        margin-left: 4%;
+        
+    }
+    .part1 .i{
+        display: inline;
+        height: 50px;
+    width: 100px;
+    font-size: 0.9em;
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    }
+    .line-1 .box{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    .img-1 #third{
+        height:70px;
+        width: 100px;
+    }
+    .last-part #lp{
+        margin-top: 20px;
+        text-align: end;
+        font-size: 0.8em;
+    }
+    .fixed-part i{
+        font-size: 2em;
+        top: 0px;
+    }
+    .fixed-part p{
+        font-size: 0.7em;
+    }
+    .line-1 .box img:hover{
+        display: none;
+        }
+}
